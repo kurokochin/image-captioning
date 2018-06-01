@@ -10,9 +10,9 @@ with open('captions.txt') as f:
 content = [x.strip() for x in content]
 print("Finish processing source!!!")
 
-i = 164000
+i = 414000
 j = 0
-while(i <= 413720):
+while(i <= 414000):
     translator = Translator(service_urls=[domains[j % len(domains)]])
     print("Starting translations from {} to {}".format(i, i+499))
     try:
